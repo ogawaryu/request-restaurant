@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ActivityDetalhe" >
+
+    <TextView
+        android:id="@+id/tvNomeDoPrato"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TableLayout
+        android:id="@+id/tlQuantidade"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvNomeDoPrato" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/bDetalheMenos"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="70dp"
+                android:width="70dp"
+                android:text="@string/detalhe_decrementar" />
+
+            <EditText
+                android:id="@+id/etQtdProduto"
+                android:layout_width="80dp"
+                android:layout_height="70dp"
+                android:text="@string/detalhe_quantidade"
+                android:inputType="number"
+                 />
+
+            <Button
+                android:id="@+id/bDetalheMais"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:height="70dp"
+                android:width="70dp"
+                android:text="@string/detalhe_incrementar" />
+        </TableRow>
+    </TableLayout>
+    
+    <TextView
+        android:id="@+id/tvObservacao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/tlQuantidade"
+        android:layout_below="@+id/tlQuantidade"
+        android:gravity="center"
+        android:text="@string/detalhe_observacao"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bAddObservacao"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvObservacao"
+        android:text="@string/detalhe_adicionar_obs"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etObservacao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bAddObservacao"
+        android:ems="10"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/lvObservacao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bAddPedido"
+        android:layout_below="@+id/etObservacao"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+    
+    <Button
+        android:id="@+id/bAddPedido"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/detalhe_adicionar"
+        android:textSize="20sp" />
+
+</RelativeLayout>

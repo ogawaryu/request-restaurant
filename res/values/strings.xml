@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pedido</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="mesa_um">1</string>
+    <string name="mesa_dois">2</string>
+    <string name="mesa_tres">3</string>
+    <string name="mesa_quatro">4</string>
+    <string name="mesa_cinco">5</string>
+    <string name="mesa_seis">6</string>
+    <string name="mesa_sete">7</string>
+    <string name="mesa_oito">8</string>
+    <string name="mesa_nove">9</string>
+    <string name="mesa_zero">0</string>
+    <string name="mesa_submit">Avançar</string>
+    <string name="mesa_remover">Apagar</string>
+    
+    <string name="catelogo_simples_finalizar">Finalizar Pedido (0)</string>
+    
+    <string name="iv_splash">Splash</string>
+    
+    <string name="tv_mesa">Número da mesa</string>
+    <string name="tv_categoria_simples">Especialidades</string>
+    
+    <string name="detalhe_incrementar">+</string>
+    <string name="detalhe_decrementar">-</string>
+    <string name="detalhe_adicionar_obs">Adicionar Observação</string>
+    <string name="detalhe_adicionar">Adicionar ao Pedido</string>
+    <string name="detalhe_observacao">Observação</string>
+    <string name="detalhe_quantidade">1</string>
+    
+    <string name="finalizar_pedido">Finalizar Pedido</string>
+    
+</resources>
